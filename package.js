@@ -1,11 +1,16 @@
 Package.describe({
-  summary: "Simple templates to add login widgets to an app"
+  name: 'art:accounts-ui',
+  summary: 'Simple templates to add login widgets to an app',
+  version: '1.0.0',
+  git: 'https://github.com/RacingTadpole/accounts-ui.git'
 });
 
-Package.on_use(function (api) {
+Package.onUse(function(api) {
+  api.versionsFrom('METEOR@0.9.0');
+
   // Export Accounts (etc) to packages using this one.
   api.imply('accounts-base', ['client', 'server']);
-  api.use('accounts-ui-unstyled', 'client');
+  api.use('art:accounts-ui-unstyled@1.0.1', 'client');
   api.use('less', 'client');
 
   api.add_files(['login_buttons.less'], 'client');
