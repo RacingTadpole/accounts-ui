@@ -1,7 +1,7 @@
 Package.describe({
   name: 'art:accounts-ui',
   summary: 'Simple templates to add login widgets to an app',
-  version: '1.1.0',
+  version: '1.1.1',
   git: 'https://github.com/RacingTadpole/accounts-ui.git'
 });
 
